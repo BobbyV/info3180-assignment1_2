@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+
+{% block js %}
+{% endblock %}
+
+
+{% block main %}
+<head>
+<style>
+	.container{
+	background-color: grey;
+  width: 430px;
+	}
+  table{
+    /*border: 1px solid black;*/
+  }
+</style>
+</head>
+<div class="container">
+<h1>List of PROFILES</h1>
+{% for user in users %}
+<table>
+  <tr>
+  <td>{{user.id}}</td><td>{{user.firstname}}</td>
+  </tr>
+</table>  
+{% endfor %}
+</div> 
+{% endblock %}
