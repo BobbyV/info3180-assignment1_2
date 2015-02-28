@@ -15,7 +15,7 @@
 <div class = "container" style="color:blue">
   <h1>PROFILE FORM</h1>
   <p>Fill in this form to create a profile.</p>
-  <form action = "{{ url_for('theform') }}" method = "post">
+  <form action = "{{ url_for('theform') }}" method = "post" enctype = "multipart/form-data">
             firstname : {{form.firstname}}<br/>
             lastname : {{form.lastname}}<br/>
             age : {{form.age}}<br/>

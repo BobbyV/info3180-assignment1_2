@@ -4,7 +4,6 @@
 {% endblock %}
 
 {% block main %}
-{% for user in users %}
   <div class = "maincontainer">
     <div class="pic">
     <img src="/static/img/{{user.image}}" alt="The baby" style="width:200px;height:200px">
@@ -24,10 +23,9 @@
             <p>Age:{{user.age}}</p>
             <p>Highest Score:{{user.high_score}}</p>
             <p>TDollar: {{user.tdollars}}</p>
-            <button onclick="location.href='../profile/{{user.userid}}'" type="button">view profile</button>
+            
       </div>
    </div>
-{% endfor %}
 {% endblock %}
 
     
